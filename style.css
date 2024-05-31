@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.photos-section {
+    position: relative;
+}
+
+.photos-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensure overflow is hidden */
+}
+
+.photos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photos img {
+    display: none; /* Hide all images initially */
+}
+
+.photos img.active {
+    display: block; /* Show the active image */
+    max-width: 100%; /* Ensure image fits within the container */
+    max-height: 100%; /* Ensure image fits within the container */
+    width: auto; /* Maintain image aspect ratio */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+.nav-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Ensure buttons are on top of images */
+}
+
+.left-button {
+    left: 0;
+}
+
+.right-button {
+    right: 0;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFD1DC; /* Light pink background */
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+}
+
+.message p {
+    font-size: 1.2em;
+    text-align: justify; /* Justify text */
+}
+
+.sub-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555; /* Slightly darker gray for sub-messages */
+}
