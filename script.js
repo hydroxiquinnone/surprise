@@ -3,7 +3,7 @@ const images = [];
 // List all image filenames in the images array.
 const totalImages = 39; // Set the actual number of images in the folder
 for (let i = 1; i <= totalImages; i++) {
-    images.push(`surprise/images/photo${i}.jpg`);
+    images.push(`images/photo${i}.jpg`);
 }
 
 // List of sub-messages for each image
